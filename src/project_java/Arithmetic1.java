@@ -2,7 +2,7 @@ package project_java;
 import java.util.Scanner;
 public class Arithmetic1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
 		{
 			// create scanner to obtain input for command line
 			Scanner input = new Scanner(System.in);
@@ -29,7 +29,6 @@ public class Arithmetic1 {
 			System.out.printf("average = %d\n", average);
 			System.out.printf("product = %d\n", product);
 		}
-
 	}
 
-}
+
