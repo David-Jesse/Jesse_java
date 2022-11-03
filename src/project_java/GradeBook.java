@@ -1,11 +1,16 @@
 package project_java;
-// GradeBook class that contains a courseName instance variable.
-// and methods to set and get its value.
+// GradeBook class with a constructor to initialize the course name.
 
 public class GradeBook {
 	private String courseName; // course name for this GradeBook
 	
-	// method to set the course name
+	// constructor initializes courseName with String argument
+	public GradeBook (String name)  // constructor name is class name
+	{
+		courseName = name;
+	}
+	
+	// method to set course name
 	public void setCourseName(String name)
 	{
 		courseName = name; //store the course name
