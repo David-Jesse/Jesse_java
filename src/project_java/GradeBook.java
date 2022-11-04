@@ -2,13 +2,25 @@ package project_java;
 // GradeBook class with a constructor to initialize the course name.
 
 public class GradeBook {
-	private String courseName; // course name for this GradeBook
+	private String courseName, instructorName; // course name for this GradeBook
+	 // instructor's name for the course
 	
-	// constructor initializes courseName with String argument
-	public GradeBook (String name)  // constructor name is class name
+	public GradeBook (String name, String instructor)  // constructor name is class name
 	{
 		courseName = name;
+		instructorName = instructor;
 	}
+	
+	// method to set instructor's name
+	public void setInstructorName(String instructor)
+	{
+		instructorName = instructor;
+	} // end method setInstructorName
+	
+	public String getInstructorName()
+	{
+		return instructorName;
+	} // end method getInstructorName
 	
 	// method to set course name
 	public void setCourseName(String name)
@@ -27,5 +39,7 @@ public class GradeBook {
 		// the course this GradeBook represents
 		System.out.printf("Welcome to the Grade Book for\n%s!\n",
 				getCourseName());
+		System.out.printf("This course is presented by: %s\n", 
+				getInstructorName());
 	} // end method displayMessage
 } // end class GradeBook

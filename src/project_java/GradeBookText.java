@@ -6,13 +6,11 @@ public class GradeBookText {
 	public static void main(String[] arg)
 	{
 		// create a GradeBook object
-		GradeBook gradeBook1 = new GradeBook("CS101 Introduction to Java programming");
-		GradeBook gradeBook2 = new GradeBook("CS102 Data Structures in Java")
+		GradeBook gradeBook = new GradeBook(
+				"CSC101 introduction to Java", "Boluwatife Sofela");
 		
-		// display initial value of courseName.
-		System.out.printf("gradeBook1 course name is: %s\n",
-				gradeBook1.getCourseName());
-		System.out.printf("gradeBook2 course name is: %s\n",
-				gradeBook2.getCourseName());
+		// call my GradeBook displayMessage method 
+				gradeBook.displayMessage();
+		
 	}//end of main
 } // end class GradeBookText
