@@ -17,7 +17,15 @@ public class Account {
 	public void credit (double amount)
 	{
 		balance = balance + amount; // add amount to balance;
-	}// end method credit
+	} // end method credit
+	
+	// debit (subtract) an amount from account
+	public void debit (double amount)
+	{
+		balance = balance - amount;
+		if (amount > balance)
+			System.out.print("Debit amount exceeded account balance");
+	}
 	
 	// return the account balance
 	public double getBalance()
